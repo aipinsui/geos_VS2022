@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/geos_VS2022/CMakeLists.txt
+  geos_c.cpp
+  geos_ts_c.cpp
+  正在生成代码...
+    正在创建库 E:/geos_VS2022/build/lib/Debug/geos_c.lib 和对象 E:/geos_VS2022/build/lib/Debug/geos_c.exp
+  geos_c.vcxproj -> E:\geos_VS2022\build\bin\Debug\geos_c.dll

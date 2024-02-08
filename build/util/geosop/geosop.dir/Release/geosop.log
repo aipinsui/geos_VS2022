@@ -1,0 +1,29 @@
+﻿  Building Custom Rule E:/geos_VS2022/util/geosop/CMakeLists.txt
+  GeosOp.cpp
+E:\geos_VS2022\util\geosop\cxxopts.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“../util/geosop/GeosOp.cpp”)
+  
+d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.38.33130\include\algorithm(3456,24): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+  (编译源文件“../util/geosop/GeosOp.cpp”)
+  d:\Microsoft Visual Studio 17.0\VC\Tools\MSVC\14.38.33130\include\algorithm(3456,24):
+  模板实例化上下文(最早的实例化上下文)为
+  	E:\geos_VS2022\util\geosop\GeosOp.cpp(132,14):
+  	查看对正在编译的函数 模板 实例化“_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,main::<lambda_ee4c0b8bf5ae12c75fd51cf6af3bddfc>>(const _InIt,const _InIt,_OutIt,_Fn)”的引用
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=main::<lambda_ee4c0b8bf5ae12c75fd51cf6af3bddfc>
+          ]
+  
+  GeometryOp.cpp
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(200,71): warning C4573: “geos::precision::GeometryPrecisionReducer::reduce”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(527,89): warning C4573: “geos::operation::distance::DistanceOp::nearestPoints”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(538,79): warning C4573: “geos::algorithm::distance::DiscreteFrechetDistance::distance”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(546,82): warning C4573: “geos::algorithm::distance::DiscreteHausdorffDistance::distance”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(825,51): warning C4573: “geos::operation::intersection::RectangleIntersection::clip”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(885,51): warning C4573: “geos::coverage::CoverageSimplifier::simplify”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+E:\geos_VS2022\util\geosop\GeometryOp.cpp(911,50): warning C4573: “geos::coverage::CoverageValidator::validate”的用法要求编译器捕获“this”，但当前默认捕获模式不允许使用“this”
+  正在生成代码...
+  geosop.vcxproj -> E:\geos_VS2022\build\bin\Release\geosop.exe

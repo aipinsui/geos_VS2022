@@ -1,0 +1,10 @@
+^E:\GEOS_VS2022\TESTS\XMLTESTER\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/tests/xmltester/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

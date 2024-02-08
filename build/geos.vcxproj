@@ -1,0 +1,1287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{623C81D0-3C43-36D6-9F70-16804BC1CC75}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>geos</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\geos_VS2022\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">geos.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">geos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\geos_VS2022\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">geos.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">geos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\geos_VS2022\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">geos.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">geos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\geos_VS2022\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">geos.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">geos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Debug";geos_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"Debug\";geos_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/Debug/geos.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/Debug/geos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Release";geos_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"Release\";geos_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/Release/geos.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/Release/geos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="MinSizeRel";geos_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\";geos_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/MinSizeRel/geos.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/MinSizeRel/geos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo";geos_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\";geos_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/RelWithDebInfo/geos.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/RelWithDebInfo/geos.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\geos_VS2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\CTest.cmake;D:\CMake\share\cmake-3.28\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.28\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\CTest.cmake;D:\CMake\share\cmake-3.28\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.28\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\CTest.cmake;D:\CMake\share\cmake-3.28\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.28\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.28\Modules\CTest.cmake;D:\CMake\share\cmake-3.28\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.28\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.28.3\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\geos_VS2022\include\geos.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Angle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Area.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\BoundaryNodeRule.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\CGAlgorithmsDD.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\CentralEndpointIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Centroid.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\ConvexHull.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Distance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\HCoordinate.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\InteriorPointArea.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\InteriorPointLine.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\InteriorPointPoint.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Interpolate.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Intersection.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Length.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\LineIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\MinimumAreaRectangle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\MinimumBoundingCircle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\MinimumDiameter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\NotRepresentableException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Orientation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\PointInRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\PointLocation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\PointLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\PolygonNodeTopology.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\RayCrossingCounter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\Rectangle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\RobustDeterminant.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\SimplePointInRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\construct\LargestEmptyCircle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\construct\MaximumInscribedCircle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\distance\DiscreteFrechetDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\distance\DiscreteHausdorffDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\distance\DistanceToPoint.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\distance\PointPairDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\hull\ConcaveHull.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\hull\ConcaveHullOfPolygons.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\hull\HullTri.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\hull\HullTriangulation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\locate\IndexedPointInAreaLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\locate\PointOnGeometryLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\algorithm\locate\SimplePointInAreaLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\constants.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\Corner.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageBoundarySegmentFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageGapFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoveragePolygonValidator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageRingEdges.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\CoverageValidator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\InvalidSegmentDetector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\TPVWSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\coverage\VertexRingCounter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\edgegraph\EdgeGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\edgegraph\EdgeGraphBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\edgegraph\HalfEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\edgegraph\MarkHalfEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\export.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Coordinate.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\CoordinateFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\CoordinateList.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\CoordinateSequence.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\CoordinateSequenceFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\CoordinateSequenceIterator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\CoordinateSequences.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Dimension.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Envelope.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Geometry.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\GeometryCollection.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\GeometryComponentFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\GeometryFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\GeometryFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\HeuristicOverlay.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\IntersectionMatrix.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\LineSegment.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\LineString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\LinearRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Location.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\MultiLineString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\MultiPoint.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\MultiPolygon.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Point.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Polygon.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Position.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\PrecisionModel.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Quadrant.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\Triangle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\AbstractPreparedPolygonContains.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\BasicPreparedGeometry.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedGeometry.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedGeometryFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedLineString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedLineStringDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedLineStringIntersects.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedLineStringNearestPoints.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPoint.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygon.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygonContains.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygonContainsProperly.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygonCovers.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygonDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygonIntersects.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\prep\PreparedPolygonPredicate.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\ComponentCoordinateExtracter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\CoordinateOperation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\Densifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryCombiner.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryEditor.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryEditorOperation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryExtracter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryFixer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryMapper.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\GeometryTransformer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\LinearComponentExtracter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\NoOpGeometryOperation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\PointExtracter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\PolygonExtracter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\ShortCircuitedGeometryVisitor.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geom\util\SineStarFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\Depth.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\DirectedEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\DirectedEdgeStar.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\Edge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeEnd.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeEndStar.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeIntersection.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeIntersectionList.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeList.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeNodingValidator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\EdgeRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\GeometryGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\GraphComponent.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\Label.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\Node.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\NodeFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\NodeMap.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\PlanarGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\TopologyLocation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\EdgeSetIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\MonotoneChain.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\MonotoneChainEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\MonotoneChainIndexer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SegmentIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SimpleEdgeSetIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SimpleMCSweepLineIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SimpleSweepLineIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SweepLineEvent.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SweepLineEventObj.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\geomgraph\index\SweepLineSegment.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\ItemVisitor.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\SpatialIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\VertexSequencePackedRtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\bintree\Bintree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\bintree\Interval.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\bintree\Key.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\bintree\Node.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\bintree\NodeBase.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\bintree\Root.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\chain\MonotoneChain.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\chain\MonotoneChainBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\chain\MonotoneChainOverlapAction.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\chain\MonotoneChainSelectAction.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\intervalrtree\IntervalRTreeBranchNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\intervalrtree\IntervalRTreeLeafNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\intervalrtree\IntervalRTreeNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\intervalrtree\SortedPackedIntervalRTree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\kdtree\KdNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\kdtree\KdNodeVisitor.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\kdtree\KdTree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\quadtree\IntervalSize.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\quadtree\Key.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\quadtree\Node.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\quadtree\NodeBase.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\quadtree\Quadtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\quadtree\Root.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\AbstractNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\AbstractSTRtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\Boundable.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\BoundablePair.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\EnvelopeUtil.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\GeometryItemDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\Interval.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\ItemBoundable.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\ItemDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\SIRtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\STRtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\SimpleSTRdistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\SimpleSTRnode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\SimpleSTRtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\TemplateSTRNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\TemplateSTRNodePair.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\TemplateSTRtree.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\strtree\TemplateSTRtreeDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\sweepline\SweepLineEvent.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\sweepline\SweepLineIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\sweepline\SweepLineInterval.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\index\sweepline\SweepLineOverlapAction.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\ByteOrderDataInStream.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\ByteOrderValues.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\CLocalizer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\CheckOrdinatesFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\GeoJSON.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\GeoJSONReader.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\GeoJSONWriter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\OrdinateSet.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\ParseException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\StringTokenizer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKBConstants.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKBReader.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKBStreamReader.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKBWriter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKTFileReader.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKTReader.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKTStreamReader.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\WKTWriter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\io\Writer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\ExtractLineByLocation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LengthIndexOfPoint.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LengthIndexedLine.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LengthLocationMap.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LinearGeometryBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LinearIterator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LinearLocation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LocationIndexOfLine.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LocationIndexOfPoint.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\linearref\LocationIndexedLine.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\math\DD.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\namespaces.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\BasicSegmentString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\BoundaryChainNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\FastNodingValidator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\FastSegmentSetIntersectionFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\GeometryNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\IntersectionAdder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\IntersectionFinderAdder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\IteratedNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\MCIndexNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\MCIndexSegmentSetMutualIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\NodableSegmentString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\NodedSegmentString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\Noder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\NodingIntersectionFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\NodingValidator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\Octant.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\OrientedCoordinateArray.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\ScaledNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentExtractingNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentIntersectionDetector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentNodeList.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentPointComparator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentSetMutualIntersector.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SegmentStringUtil.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SimpleNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\SinglePassNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\ValidatingNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snap\SnappingIntersectionAdder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snap\SnappingNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snap\SnappingPointIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snapround\HotPixel.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snapround\HotPixelIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snapround\MCIndexPointSnapper.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snapround\MCIndexSnapRounder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snapround\SnapRoundingIntersectionAdder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\noding\snapround\SnapRoundingNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\BoundaryOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\GeometryGraphOperation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\BufferBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\BufferCurveSetBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\BufferInputLineSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\BufferOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\BufferParameters.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\BufferSubgraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\OffsetCurve.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\OffsetCurveBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\OffsetCurveSection.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\OffsetSegmentGenerator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\OffsetSegmentString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\RightmostEdgeFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\SegmentMCIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\buffer\SubgraphDepthLocater.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\AbstractClusterFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\Clusters.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\DBSCANClusterFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\DisjointOperation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\EnvelopeDistanceClusterFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\EnvelopeIntersectsClusterFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\GeometryDistanceClusterFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\GeometryFlattener.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\GeometryIntersectsClusterFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\cluster\UnionFind.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\ConnectedElementLocationFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\ConnectedElementPointFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\DistanceOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\FacetSequence.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\FacetSequenceTreeBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\GeometryLocation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\distance\IndexedFacetDistance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\intersection\Rectangle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\intersection\RectangleIntersection.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\intersection\RectangleIntersectionBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\linemerge\EdgeString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\linemerge\LineMergeDirectedEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\linemerge\LineMergeEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\linemerge\LineMergeGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\linemerge\LineMerger.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\linemerge\LineSequencer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\MaximalEdgeRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\MinimalEdgeRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\OverlayNodeFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\PolygonBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\snap\GeometrySnapper.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\snap\LineStringSnapper.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\snap\SnapOverlayOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\validate\FuzzyPointLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\validate\OffsetPointGenerator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlay\validate\OverlayResultValidator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\CoverageUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\Edge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\EdgeKey.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\EdgeMerger.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\EdgeNodingBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\EdgeSourceInfo.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\ElevationModel.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\IndexedPointOnLineLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\InputGeometry.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\IntersectionPointBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\LineBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\LineLimiter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\MaximalEdgeRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayEdgeRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayLabel.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayLabeller.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayMixedPoints.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayNG.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayNGRobust.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayPoints.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\OverlayUtil.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\PolygonBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\PrecisionReducer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\PrecisionUtil.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\RingClipper.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\RobustClipEnvelopeComputer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\overlayng\UnaryUnionNG.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\BuildArea.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\EdgeRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\HoleAssigner.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\PolygonizeDirectedEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\PolygonizeEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\PolygonizeGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\polygonize\Polygonizer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\predicate\RectangleContains.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\predicate\RectangleIntersects.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\predicate\SegmentIntersectionTester.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\EdgeEndBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\EdgeEndBundle.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\EdgeEndBundleStar.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\RelateComputer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\RelateNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\RelateNodeFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\RelateNodeGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\relate\RelateOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\sharedpaths\SharedPathsOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\CascadedPolygonUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\CoverageUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\DisjointSubsetUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\OverlapUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\PointGeometryUnion.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\UnaryUnionOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\union\UnionStrategy.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\ConsistentAreaTester.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\IndexedNestedHoleTester.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\IndexedNestedPolygonTester.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\IsSimpleOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\IsValidOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\MakeValid.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\PolygonIntersectionAnalyzer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\PolygonRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\PolygonRingSelfNode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\PolygonRingTouch.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\PolygonTopologyAnalyzer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\RepeatedPointRemover.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\RepeatedPointTester.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\operation\valid\TopologyValidationError.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\DirectedEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\DirectedEdgeStar.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\Edge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\GraphComponent.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\Node.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\NodeMap.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\PlanarGraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\Subgraph.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\planargraph\algorithm\ConnectedSubgraphFinder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\CommonBits.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\CommonBitsOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\CommonBitsRemover.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\EnhancedPrecisionOp.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\GeometryPrecisionReducer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\MinimumClearance.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\PointwisePrecisionReducerTransformer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\PrecisionReducerCoordinateOperation.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\PrecisionReducerTransformer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\precision\SimpleGeometryPrecisionReducer.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\profiler.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\shape\fractal\HilbertCode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\shape\fractal\HilbertEncoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\shape\fractal\MortonCode.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\DouglasPeuckerLineSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\DouglasPeuckerSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\LineSegmentIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\LinkedLine.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\LinkedRing.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\PolygonHullSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\RingHull.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\RingHullIndex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\TaggedLineSegment.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\TaggedLineString.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\TaggedLineStringSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\TaggedLinesSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\simplify\TopologyPreservingSimplifier.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\DelaunayTriangulationBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\IncrementalDelaunayTriangulator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\VoronoiDiagramBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\polygon\ConstrainedDelaunayTriangulator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\polygon\PolygonEarClipper.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\polygon\PolygonHoleJoiner.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\polygon\PolygonNoder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\polygon\PolygonTriangulator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\polygon\TriDelaunayImprover.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\LastFoundQuadEdgeLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\LocateFailureException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\QuadEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\QuadEdgeLocator.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\QuadEdgeQuartet.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\QuadEdgeSubdivision.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\TrianglePredicate.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\TriangleVisitor.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\quadedge\Vertex.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\tri\Tri.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\tri\TriEdge.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\tri\TriList.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\triangulate\tri\TriangulationBuilder.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\unload.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\Assert.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\AssertionFailedException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\CoordinateArrayFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\GEOSException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\GeometricShapeFactory.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\IllegalArgumentException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\IllegalStateException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\Interrupt.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\Machine.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\TopologyException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\UniqueCoordinateArrayFilter.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\UnsupportedOperationException.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\math.h" />
+    <ClInclude Include="E:\geos_VS2022\include\geos\util\string.h" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Angle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Area.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\BoundaryNodeRule.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\CGAlgorithmsDD.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Centroid.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\ConvexHull.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Distance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\HCoordinate.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\InteriorPointArea.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\InteriorPointLine.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\InteriorPointPoint.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Intersection.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Length.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\LineIntersector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\MinimumAreaRectangle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\MinimumBoundingCircle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\MinimumDiameter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\NotRepresentableException.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Orientation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\PointLocation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\PointLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\PolygonNodeTopology.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\RayCrossingCounter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\Rectangle.cpp">
+      <ObjectFileName>$(IntDir)/src/algorithm/Rectangle.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\RobustDeterminant.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\SimplePointInRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\construct\LargestEmptyCircle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\construct\MaximumInscribedCircle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\distance\DiscreteFrechetDistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\distance\DiscreteHausdorffDistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\distance\DistanceToPoint.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\hull\ConcaveHull.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\hull\ConcaveHullOfPolygons.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\hull\HullTri.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\hull\HullTriangulation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\locate\IndexedPointInAreaLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\locate\PointOnGeometryLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\algorithm\locate\SimplePointInAreaLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\Corner.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageBoundarySegmentFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageGapFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoveragePolygonValidator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageRingEdges.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageUnion.cpp">
+      <ObjectFileName>$(IntDir)/src/coverage/CoverageUnion.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\coverage\CoverageValidator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\InvalidSegmentDetector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\TPVWSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\coverage\VertexRingCounter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\edgegraph\EdgeGraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\edgegraph\EdgeGraphBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\edgegraph\HalfEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\edgegraph\MarkHalfEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Coordinate.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\CoordinateSequence.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Dimension.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Envelope.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Geometry.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\GeometryCollection.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\GeometryComponentFilter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\GeometryFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\HeuristicOverlay.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\IntersectionMatrix.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\LineSegment.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\LineString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\LinearRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Location.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\MultiLineString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\MultiPoint.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\MultiPolygon.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Point.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Polygon.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Position.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\PrecisionModel.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Quadrant.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\Triangle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\AbstractPreparedPolygonContains.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\BasicPreparedGeometry.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedGeometry.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedGeometryFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedLineString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedLineStringDistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedLineStringIntersects.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedLineStringNearestPoints.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPoint.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygon.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygonContains.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygonContainsProperly.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygonCovers.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygonDistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygonIntersects.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\prep\PreparedPolygonPredicate.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\ComponentCoordinateExtracter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\CoordinateOperation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\Densifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\GeometryCombiner.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\GeometryEditor.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\GeometryFixer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\GeometryMapper.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\GeometryTransformer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\LinearComponentExtracter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\NoOpGeometryOperation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\PointExtracter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\PolygonExtracter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\ShortCircuitedGeometryVisitor.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geom\util\SineStarFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\Depth.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\DirectedEdge.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/DirectedEdge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\DirectedEdgeStar.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/DirectedEdgeStar.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\Edge.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/Edge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\EdgeEnd.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\EdgeEndStar.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\EdgeIntersectionList.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\EdgeList.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\EdgeNodingValidator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\EdgeRing.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/EdgeRing.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\GeometryGraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\GraphComponent.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\Label.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\Node.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/Node.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\NodeFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\NodeMap.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/NodeMap.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\PlanarGraph.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/PlanarGraph.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\TopologyLocation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\MonotoneChainEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\MonotoneChainIndexer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\SegmentIntersector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\SimpleEdgeSetIntersector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\SimpleMCSweepLineIntersector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\SimpleSweepLineIntersector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\SweepLineEvent.cpp">
+      <ObjectFileName>$(IntDir)/src/geomgraph/index/SweepLineEvent.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\geomgraph\index\SweepLineSegment.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\VertexSequencePackedRtree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\bintree\Bintree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\bintree\Interval.cpp">
+      <ObjectFileName>$(IntDir)/src/index/bintree/Interval.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\bintree\Key.cpp">
+      <ObjectFileName>$(IntDir)/src/index/bintree/Key.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\bintree\Node.cpp">
+      <ObjectFileName>$(IntDir)/src/index/bintree/Node.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\bintree\NodeBase.cpp">
+      <ObjectFileName>$(IntDir)/src/index/bintree/NodeBase.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\bintree\Root.cpp">
+      <ObjectFileName>$(IntDir)/src/index/bintree/Root.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\chain\MonotoneChain.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\chain\MonotoneChainBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\chain\MonotoneChainOverlapAction.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\chain\MonotoneChainSelectAction.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\intervalrtree\IntervalRTreeBranchNode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\intervalrtree\IntervalRTreeLeafNode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\intervalrtree\SortedPackedIntervalRTree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\kdtree\KdNode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\kdtree\KdTree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\quadtree\IntervalSize.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\quadtree\Key.cpp">
+      <ObjectFileName>$(IntDir)/src/index/quadtree/Key.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\quadtree\Node.cpp">
+      <ObjectFileName>$(IntDir)/src/index/quadtree/Node.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\quadtree\NodeBase.cpp">
+      <ObjectFileName>$(IntDir)/src/index/quadtree/NodeBase.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\quadtree\Quadtree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\quadtree\Root.cpp">
+      <ObjectFileName>$(IntDir)/src/index/quadtree/Root.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\AbstractSTRtree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\BoundablePair.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\EnvelopeUtil.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\GeometryItemDistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\Interval.cpp">
+      <ObjectFileName>$(IntDir)/src/index/strtree/Interval.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\SIRtree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\STRtree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\SimpleSTRdistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\SimpleSTRnode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\strtree\SimpleSTRtree.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\sweepline\SweepLineEvent.cpp">
+      <ObjectFileName>$(IntDir)/src/index/sweepline/SweepLineEvent.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\index\sweepline\SweepLineIndex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\index\sweepline\SweepLineInterval.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\ByteOrderDataInStream.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\ByteOrderValues.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\CLocalizer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\GeoJSON.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\GeoJSONReader.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\GeoJSONWriter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\ParseException.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\StringTokenizer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\Unload.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKBReader.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKBStreamReader.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKBWriter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKTFileReader.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKTReader.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKTStreamReader.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\WKTWriter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\io\Writer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\ExtractLineByLocation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LengthIndexOfPoint.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LengthIndexedLine.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LengthLocationMap.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LinearGeometryBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LinearIterator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LinearLocation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LocationIndexOfLine.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\linearref\LocationIndexOfPoint.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\math\DD.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\BasicSegmentString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\BoundaryChainNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\FastNodingValidator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\FastSegmentSetIntersectionFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\GeometryNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\IntersectionAdder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\IntersectionFinderAdder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\IteratedNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\MCIndexNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\MCIndexSegmentSetMutualIntersector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\NodedSegmentString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\NodingIntersectionFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\NodingValidator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\Octant.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\OrientedCoordinateArray.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\ScaledNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SegmentExtractingNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SegmentIntersectionDetector.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SegmentNode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SegmentNodeList.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SegmentString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SegmentStringUtil.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\SimpleNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\ValidatingNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snap\SnappingIntersectionAdder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snap\SnappingNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snap\SnappingPointIndex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snapround\HotPixel.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snapround\HotPixelIndex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snapround\MCIndexPointSnapper.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snapround\MCIndexSnapRounder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snapround\SnapRoundingIntersectionAdder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\noding\snapround\SnapRoundingNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\BoundaryOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\GeometryGraphOperation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\BufferBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\BufferCurveSetBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\BufferInputLineSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\BufferOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\BufferParameters.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\BufferSubgraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\OffsetCurve.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\OffsetCurveBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\OffsetCurveSection.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\OffsetSegmentGenerator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\RightmostEdgeFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\SegmentMCIndex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\buffer\SubgraphDepthLocater.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\cluster\AbstractClusterFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\cluster\Clusters.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\cluster\DBSCANClusterFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\cluster\GeometryFlattener.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\cluster\UnionFind.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\ConnectedElementLocationFilter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\ConnectedElementPointFilter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\DistanceOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\FacetSequence.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\FacetSequenceTreeBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\GeometryLocation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\distance\IndexedFacetDistance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\intersection\Rectangle.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/intersection/Rectangle.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\intersection\RectangleIntersection.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\intersection\RectangleIntersectionBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\linemerge\EdgeString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\linemerge\LineMergeDirectedEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\linemerge\LineMergeEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\linemerge\LineMergeGraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\linemerge\LineMerger.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\linemerge\LineSequencer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\MaximalEdgeRing.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/overlay/MaximalEdgeRing.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\MinimalEdgeRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\OverlayNodeFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\PolygonBuilder.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/overlay/PolygonBuilder.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\snap\GeometrySnapper.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\snap\LineStringSnapper.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\snap\SnapOverlayOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\validate\FuzzyPointLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\validate\OffsetPointGenerator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlay\validate\OverlayResultValidator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\CoverageUnion.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/overlayng/CoverageUnion.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\Edge.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/overlayng/Edge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\EdgeKey.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\EdgeMerger.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\EdgeNodingBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\EdgeSourceInfo.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\ElevationModel.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\IndexedPointOnLineLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\InputGeometry.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\IntersectionPointBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\LineBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\LineLimiter.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\MaximalEdgeRing.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/overlayng/MaximalEdgeRing.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayEdgeRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayGraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayLabel.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayLabeller.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayMixedPoints.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayNG.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayNGRobust.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayPoints.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\OverlayUtil.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\PolygonBuilder.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/overlayng/PolygonBuilder.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\PrecisionReducer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\PrecisionUtil.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\RingClipper.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\RobustClipEnvelopeComputer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\overlayng\UnaryUnionNG.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\BuildArea.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\EdgeRing.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/polygonize/EdgeRing.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\HoleAssigner.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\PolygonizeDirectedEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\PolygonizeEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\PolygonizeGraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\polygonize\Polygonizer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\predicate\RectangleContains.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\predicate\RectangleIntersects.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\predicate\SegmentIntersectionTester.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\EdgeEndBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\EdgeEndBundle.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\EdgeEndBundleStar.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\RelateComputer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\RelateNode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\RelateNodeFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\RelateNodeGraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\relate\RelateOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\sharedpaths\SharedPathsOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\union\CascadedPolygonUnion.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\union\CoverageUnion.cpp">
+      <ObjectFileName>$(IntDir)/src/operation/union/CoverageUnion.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\operation\union\OverlapUnion.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\union\PointGeometryUnion.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\union\UnaryUnionOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\union\UnionStrategy.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\IndexedNestedHoleTester.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\IndexedNestedPolygonTester.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\IsSimpleOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\IsValidOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\MakeValid.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\PolygonIntersectionAnalyzer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\PolygonRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\PolygonRingSelfNode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\PolygonRingTouch.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\PolygonTopologyAnalyzer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\RepeatedPointRemover.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\RepeatedPointTester.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\operation\valid\TopologyValidationError.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\DirectedEdge.cpp">
+      <ObjectFileName>$(IntDir)/src/planargraph/DirectedEdge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\DirectedEdgeStar.cpp">
+      <ObjectFileName>$(IntDir)/src/planargraph/DirectedEdgeStar.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\Edge.cpp">
+      <ObjectFileName>$(IntDir)/src/planargraph/Edge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\Node.cpp">
+      <ObjectFileName>$(IntDir)/src/planargraph/Node.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\NodeMap.cpp">
+      <ObjectFileName>$(IntDir)/src/planargraph/NodeMap.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\PlanarGraph.cpp">
+      <ObjectFileName>$(IntDir)/src/planargraph/PlanarGraph.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\Subgraph.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\planargraph\algorithm\ConnectedSubgraphFinder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\CommonBits.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\CommonBitsOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\CommonBitsRemover.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\EnhancedPrecisionOp.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\GeometryPrecisionReducer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\MinimumClearance.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\PointwisePrecisionReducerTransformer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\PrecisionReducerCoordinateOperation.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\PrecisionReducerTransformer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\precision\SimpleGeometryPrecisionReducer.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\shape\fractal\HilbertCode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\shape\fractal\HilbertEncoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\shape\fractal\MortonCode.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\DouglasPeuckerLineSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\DouglasPeuckerSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\LineSegmentIndex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\LinkedLine.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\LinkedRing.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\PolygonHullSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\RingHull.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\RingHullIndex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\TaggedLineSegment.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\TaggedLineString.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\TaggedLineStringSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\TaggedLinesSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\simplify\TopologyPreservingSimplifier.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\DelaunayTriangulationBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\IncrementalDelaunayTriangulator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\VoronoiDiagramBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\polygon\ConstrainedDelaunayTriangulator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\polygon\PolygonEarClipper.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\polygon\PolygonHoleJoiner.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\polygon\PolygonNoder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\polygon\PolygonTriangulator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\polygon\TriDelaunayImprover.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\quadedge\LastFoundQuadEdgeLocator.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\quadedge\LocateFailureException.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\quadedge\QuadEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\quadedge\QuadEdgeSubdivision.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\quadedge\TrianglePredicate.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\quadedge\Vertex.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\tri\Tri.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\tri\TriEdge.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\triangulate\tri\TriangulationBuilder.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\util\Assert.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\util\GeometricShapeFactory.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\util\Interrupt.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\util\Profiler.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\util\math.cpp" />
+    <ClCompile Include="E:\geos_VS2022\src\util\string.cpp" />
+    <Object Include="E:\geos_VS2022\build\src\deps\ryu.dir\$(Configuration)\d2s.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\geos_VS2022\build\ZERO_CHECK.vcxproj">
+      <Project>{39967EC5-88E3-3E90-82A5-3AC4CE7E8211}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\geos_VS2022\build\src\deps\ryu.vcxproj">
+      <Project>{D4D5FA9D-61C8-37C1-BDD6-C69AA547620D}</Project>
+      <Name>ryu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
