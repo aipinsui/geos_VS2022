@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake
+D:/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake
+D:/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake
+D:/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+D:/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake
+D:/CMake/share/cmake-3.29/Modules/FindThreads.cmake
+D:/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
+E:/geos_VS2022/tests/unit/CMakeLists.txt

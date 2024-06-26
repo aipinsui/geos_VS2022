@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E74B4942-5CF2-3F40-A04A-4ED63E98E087}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>geos_c</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\geos_VS2022\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">geos_c.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">geos_c</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\geos_VS2022\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">geos_c.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">geos_c</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\geos_VS2022\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">geos_c.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">geos_c</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\geos_VS2022\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">geos_c.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">geos_c</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Debug";geos_c_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"Debug\";geos_c_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Debug\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/Debug/geos_c.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/Debug/geos_c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="Release";geos_c_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"Release\";geos_c_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Release\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/Release/geos_c.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/Release/geos_c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="MinSizeRel";geos_c_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\";geos_c_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/MinSizeRel/geos_c.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/MinSizeRel/geos_c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo";geos_c_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEOS_DLL_EXPORT;USE_UNSTABLE_GEOS_CPP_API;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\";geos_c_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\geos_VS2022\build\capi;E:\geos_VS2022\include;E:\geos_VS2022\build\include;E:\geos_VS2022\src\deps;E:\geos_VS2022\build\src\deps;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/geos_VS2022/build/lib/RelWithDebInfo/geos_c.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/geos_VS2022/build/bin/RelWithDebInfo/geos_c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\geos_VS2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CTest.cmake;D:\CMake\share\cmake-3.29\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.29\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CTest.cmake;D:\CMake\share\cmake-3.29\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.29\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CTest.cmake;D:\CMake\share\cmake-3.29\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.29\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/geos_VS2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/geos_VS2022 -BE:/geos_VS2022/build --check-stamp-file E:/geos_VS2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.29\Modules\CTest.cmake;D:\CMake\share\cmake-3.29\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.29\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeCXXCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeRCCompiler.cmake;E:\geos_VS2022\build\CMakeFiles\3.29.6\CMakeSystem.cmake;E:\geos_VS2022\cmake\Ccache.cmake;E:\geos_VS2022\cmake\cmake_uninstall.cmake.in;E:\geos_VS2022\cmake\geos-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\geos_VS2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\geos_VS2022\capi\geos_c.cpp" />
+    <ClCompile Include="E:\geos_VS2022\capi\geos_ts_c.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\geos_VS2022\build\ZERO_CHECK.vcxproj">
+      <Project>{39967EC5-88E3-3E90-82A5-3AC4CE7E8211}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\geos_VS2022\build\geos.vcxproj">
+      <Project>{623C81D0-3C43-36D6-9F70-16804BC1CC75}</Project>
+      <Name>geos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
