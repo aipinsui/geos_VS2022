@@ -1,6 +1,0 @@
-﻿  Building Custom Rule E:/geos_VS2022/tests/xmltester/CMakeLists.txt
-  XMLTester.cpp
-  BufferResultMatcher.cpp
-  SingleSidedBufferResultMatcher.cpp
-  正在生成代码...
-  test_xmltester.vcxproj -> E:\geos_VS2022\build\bin\Debug\test_xmltester.exe

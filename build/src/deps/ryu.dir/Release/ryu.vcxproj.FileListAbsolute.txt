@@ -1,1 +1,0 @@
-E:\geos_VS2022\build\src\deps\ryu.dir\Release\ryu.lib
